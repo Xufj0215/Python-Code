@@ -1,10 +1,6 @@
 import numpy as np
 import pandas as pd
 from sklearn.preprocessing import MinMaxScaler
-# from tensorflow.keras.models import Sequential
-# from tensorflow.keras.layers import Dense, LSTM, Dropout
-# from tensorflow.keras.layers import Input
-# from tensorflow.keras.callbacks import EarlyStopping, LearningRateScheduler
 from keras.models import Sequential
 from keras.layers import Dense, LSTM, Dropout
 from keras.layers import Input
@@ -16,7 +12,7 @@ from sqlalchemy import create_engine
 # 数据库连接函数
 def connect_to_mysql():
     # 创建SQLAlchemy引擎
-    engine = create_engine('mysql+mysqldb://root:jbyoutlier@localhost/stock_data')
+    engine = create_engine('mysql+mysqldb://root:jbyoutlier@127.0.0.1/New_Database')
     return engine
 
 # 从MySQL获取数据

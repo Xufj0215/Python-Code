@@ -1,6 +1,4 @@
 import os
-# 设置环境变量以禁用 oneDNN 优化
-# 下边这一行需要写在tensorflow之前
 os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
 import numpy as np
 import pandas as pd
@@ -14,7 +12,7 @@ from sqlalchemy import create_engine
 
 # 数据库连接函数
 def connect_to_mysql():
-    engine = create_engine('mysql+mysqldb://root:jbyoutlier@localhost/stock_data')
+    engine = create_engine('mysql+mysqldb://root:jbyoutlier@127.0.0.1/New_Database')
     return engine
 
 # 从MySQL获取数据

@@ -5,8 +5,7 @@ import pandas as pd
 def connect_to_mysql():
     # 创建SQLAlchemy引擎
     # engine = create_engine('mysql+mysqldb://root:jbyoutlier@localhost/stock_data')
-    # engine = create_engine('mysql+mysqldb://root:Xufujie021593@127.0.0.1/New_Database')
-    engine = create_engine('mysql+mysqldb://root:Xufujie021593@127.0.0.1/New_Database')
+    engine = create_engine('mysql+mysqldb://root:jbyoutlier@127.0.0.1/New_Database')
 
     return engine
 
